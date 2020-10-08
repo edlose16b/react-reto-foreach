@@ -7,8 +7,7 @@ const initialState = []
 const reducer = (state = initialState, { type, payload }) => {
     switch (type) {
         case FETCH_TRANSPORTATIONS:
-
-            return [...state, ...payload];
+            return [...payload];
 
         default:
             return state

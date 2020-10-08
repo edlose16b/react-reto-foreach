@@ -21,6 +21,7 @@ class TableComponent extends Component {
 
     render = () => {
         return (<div className="classTable">
+            <h2>Lista de viajes reportados</h2>
             <TableContainer component={Paper}>
                 <Table aria-label="simple table">
                     <TableHead>
@@ -30,6 +31,7 @@ class TableComponent extends Component {
                             <TableCell align="right">Punto de inicio</TableCell>
                             <TableCell align="right">Punto de termino</TableCell>
                             <TableCell align="right">Medio de transporte</TableCell>
+                            <TableCell align="right">Kilometros recorridos</TableCell>
                             <TableCell align="right">Personas en el viaje</TableCell>
                             <TableCell align="right">Ida y vuelta</TableCell>
                             <TableCell align="right">kgCO2 por persona</TableCell>
@@ -42,9 +44,10 @@ class TableComponent extends Component {
                                 <TableCell align="right">{travel.createdAt}</TableCell>
                                 <TableCell align="right">{travel.startingPoint}</TableCell>
                                 <TableCell align="right">{travel.arrivalPoint}</TableCell>
-                                <TableCell align="right">{travel.kilometersTraveled}</TableCell>
                                 <TableCell align="right">{travel.transport}</TableCell>
+                                <TableCell align="right">{travel.kilometersTraveled}</TableCell>
                                 <TableCell align="right">{travel.passengers}</TableCell>
+                                <TableCell align="right">{travel.roundTrip ? 'Sí' : 'No'}</TableCell>
                                 <TableCell align="right">{travel.KgCoPerPerson}</TableCell>
                             </TableRow>
                         ))}
