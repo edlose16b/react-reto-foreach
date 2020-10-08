@@ -8,7 +8,7 @@ Este proyecto solo funcionará modo prueba, puesto que requiere del serivdor bac
 
 ```bash
 # Clonar este repositorio
-$ git clone
+$ git clone https://github.com/edwincbalbin/react-reto-foreach.git
 # Instalar dependencias
 $ npm install 
 # Después de iniciar el servidor back correr este proyecto, asegurese que el archivo src/core/constans.js tenga la API_URI correcta
